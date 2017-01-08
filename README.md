@@ -1,4 +1,4 @@
-node-cryptojs-aes
+@goodmind/node-cryptojs-aes
 =================
 
 [![Build](https://travis-ci.org/chengxianga2008/node-cryptojs-aes.png)](https://travis-ci.org/chengxianga2008/node-cryptojs-aes)
@@ -6,19 +6,19 @@ node-cryptojs-aes
 [![Dependencies](https://david-dm.org/chengxianga2008/node-cryptojs-aes.png)](https://david-dm.org/chengxianga2008/node-cryptojs-aes)
 [![Tips](http://img.shields.io/gittip/chengxianga2008.png)](https://www.gittip.com/chengxianga2008/)
 
-**node-cryptojs-aes** is a minimalist port of cryptojs javascript library to node.js, that supports AES symmetric key cryptography.
+**@goodmind/node-cryptojs-aes** is a minimalist port of cryptojs javascript library to node.js, that supports AES symmetric key cryptography.
 
-Unlike node.js native crypto library, **node-cryptojs-aes** removes openssl dependency.
+Unlike node.js native crypto library, **@goodmind/node-cryptojs-aes** removes openssl dependency.
 
 It is built upon award winning browser side javascript library CryptoJS. currently, it has been updated to be compatible with CryptoJS version 3.1. 
 
-**node-cryptojs-aes** doesn't make any modification to original cryptojs library, the syntax remains the same in accordance with [CryptoJS documentation](http://code.google.com/p/crypto-js/). 
+**@goodmind/node-cryptojs-aes** doesn't make any modification to original cryptojs library, the syntax remains the same in accordance with [CryptoJS documentation](http://code.google.com/p/crypto-js/). 
 
-**node-cryptojs-aes** doesn't rely on any external library, such as native openssl libary or any external node.js modules. As a node.js module, it can simply be installed through npm package management system. There is no configuration needed also.
+**@goodmind/node-cryptojs-aes** doesn't rely on any external library, such as native openssl libary or any external node.js modules. As a node.js module, it can simply be installed through npm package management system. There is no configuration needed also.
 
-**node-cryptojs-aes** maximises node.js design spirit. Browser side and server side are running identical javascript cryptography codebase. It allows coder to migrate any browser side logic to server or vice versa without any modification. The message passing between server side and client side has been drastically simplified. The encrypted JSON data is passed between client side and server side without any additional parsing or encoding effort made on both side.
+**@goodmind/node-cryptojs-aes** maximises node.js design spirit. Browser side and server side are running identical javascript cryptography codebase. It allows coder to migrate any browser side logic to server or vice versa without any modification. The message passing between server side and client side has been drastically simplified. The encrypted JSON data is passed between client side and server side without any additional parsing or encoding effort made on both side.
 
-**node-cryptojs-aes** works great on **frontend data masking and unmasking**. Client will do the heavy lifting to decipher and reveal the masked data, reduce server load and processing time.
+**@goodmind/node-cryptojs-aes** works great on **frontend data masking and unmasking**. Client will do the heavy lifting to decipher and reveal the masked data, reduce server load and processing time.
 
 ## Features
 
@@ -69,7 +69,7 @@ Then, it performs data encryption
 
 ```javascript
 // import node-cryptojs-aes modules to encrypt or decrypt data
-var node_cryptojs = require('node-cryptojs-aes');
+var node_cryptojs = require('@goodmind/node-cryptojs-aes');
 
 // node-cryptojs-aes main object;
 var CryptoJS = node_cryptojs.CryptoJS;
@@ -219,7 +219,7 @@ Once passphrase is passed from server, client will do the heavy lifting to decip
 
 On the other hand, AJAX request will consume bandwidth when passing large amount sensitive data in real time, impose heavy workload on server at `spike time`, also browsing is delayed if network is lagging.
 
-Last but not least, `node-cryptojs-aes` frontend data masking is aimed at preventing frontend data hacker malicious behaviour, it can't stop MITM attack.
+Last but not least, `@goodmind/node-cryptojs-aes` frontend data masking is aimed at preventing frontend data hacker malicious behaviour, it can't stop MITM attack.
 
 #### Decryption logic
 
@@ -275,23 +275,23 @@ Or you can find your own copy at client/ folder
 Install through npm
 
 ```
-npm install node-cryptojs-aes
+npm install @goodmind/node-cryptojs-aes
 ```
 
 ## Changelog
 
-**node-cryptojs-aes** Version 0.3.8 - 23/02/2014
+**@goodmind/node-cryptojs-aes** Version 0.3.8 - 23/02/2014
   
   * Upgrade to cryptojs v3.1
   * Test compatibility with nodes.js v0.10.26
   * Add express 3 use case
   * Refine the Readme document
 
-**node-cryptojs-aes** Version 0.3.7 - 01/08/2012
+**@goodmind/node-cryptojs-aes** Version 0.3.7 - 01/08/2012
   
   * Add browser side support
 
-**node-cryptojs-aes** Version 0.3.4 - 21/07/2012
+**@goodmind/node-cryptojs-aes** Version 0.3.4 - 21/07/2012
 
   * Update to cryptojs v3.0.2
 
