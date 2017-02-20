@@ -4,6 +4,7 @@ require('./lib/md5');
 require('./lib/evpkdf');
 require('./lib/cipher-core');
 require('./lib/aes');
+require('./lib/sha256');
 var JsonFormatter = require('./lib/jsonformatter').JsonFormatter;
 
 exports.CryptoJS = CryptoJS;
